@@ -1,0 +1,8 @@
+<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               maxHttpHeaderSize="6553600"
+               redirectPort="8443" />
+			   
+			   
+# For large number of projects required, maxHttpHeaderSize set to 6553600 
+https://github.com/OpenGrok/OpenGrok/wiki/How-to-install-OpenGrok#large-number-of-projects-on-tomcat

@@ -1,0 +1,16 @@
+eca/eca
+eca/eca-ansible-vsphere
+eca/eca-client
+eca/eca-cloudstack
+eca/eca-core
+eca/eca-core-ref
+eca/eca-docs
+eca/eca-jclouds
+eca/eca-jinterop
+eca/eca-libs
+eca/eca-openstack4j
+eca/eca-os4j
+eca/eca-postgresql
+eca/eca-test
+eca/eca/test
+eca/mimic

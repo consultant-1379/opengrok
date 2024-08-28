@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_241" class="java.beans.XMLDecoder">
+ <object class="org.opensolaris.opengrok.configuration.Configuration" id="Configuration0">
+  <void property="allowLeadingWildcard">
+   <boolean>true</boolean>
+  </void>
+  <void property="cmds">
+   <object class="java.util.Collections" method="unmodifiableMap">
+    <object class="java.util.HashMap">
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.PerforceRepository</string>
+      <string>p4</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.ClearCaseRepository</string>
+      <string>cleartool</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.GitRepository</string>
+      <string>/usr/bin/git</string>
+     </void>
+    </object>
+   </object>
+  </void>
+  <void property="ctags">
+   <string>/proj/opengrok/tools/ctags/ctags-5.8/bin/ctags</string>
+  </void>
+  <void property="dataRoot">
+   <string>/proj/opengrok/SON-ALL-Repos-index/data</string>
+  </void>
+  <void property="projects">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>sonom</string>
+     </void>
+     <void property="path">
+      <string>/sonom</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>testware</string>
+     </void>
+     <void property="path">
+      <string>/testware</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="remoteScmSupported">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.opensolaris.opengrok.configuration.Configuration$RemoteSCM</class>
+    <string>ON</string>
+   </object>
+  </void>
+  <void property="repositories">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SON-ALL-Repos/src/testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SON-ALL-Repos/src/sonom</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="sourceRoot">
+   <string>/proj/opengrok/SON-ALL-Repos/src</string>
+  </void>
+  <void property="urlPrefix">
+   <string>/son-opengrok/s?</string>
+  </void>
+  <void property="verbose">
+   <boolean>true</boolean>
+  </void>
+ </object>
+</java>

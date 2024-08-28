@@ -1,0 +1,6 @@
+OSS/ENM-Parent/SQ-Gate/com.ericsson.oss.ci/Axisops_test
+OSS/com.ericsson.oss.itpf.security/pki-web-cli
+OSS/com.ericsson.oss.itpf.security/security-config-model
+OSS/com.ericsson.oss.mediation.adapter/enterprise-heartbeat-connector-api
+OSS/com.ericsson.td/ERICbeta
+OSS/com.ericsson.td/ERICdelta

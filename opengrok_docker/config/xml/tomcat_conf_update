@@ -1,0 +1,30 @@
+<!--LDAP Config START-->
+<Realm className="org.apache.catalina.realm.CombinedRealm">
+        <Realm className="org.apache.catalina.realm.JNDIRealm"
+                roleSearchAsUser="true"
+                connectionURL=" ldaps://ldap-egad.internal.ericsson.com:3269"
+                userRoleName="member"
+                userBase="DC=ericsson,DC=se"
+                userPattern="CN={0},OU=CA,OU=User,OU=P001,OU=ID,OU=Data,DC=ericsson,DC=se"
+                roleBase="OU=IDM,OU=P001,OU=GRP,OU=Data,DC=ericsson,DC=se"
+                roleName="cn"
+                roleSearch="(member={0})"
+                roleSubtree="false"
+                userSubtree="true"
+        />
+
+        <Realm className="org.apache.catalina.realm.JNDIRealm"
+                roleSearchAsUser="true"
+                connectionURL=" ldaps://ldap-egad.internal.ericsson.com:3269"
+                userRoleName="member"
+                userBase="DC=ericsson,DC=se"
+                userPattern="CN={0},OU=External,OU=P017,OU=ID,OU=Data,DC=ericsson,DC=se"
+                roleBase="OU=IDM,OU=P001,OU=GRP,OU=Data,DC=ericsson,DC=se"
+                roleName="cn"
+                roleSearch="(member={0})"
+                roleSubtree="false"
+                userSubtree="true"
+        />
+
+</Realm>
+<!--LDAP Config END-->

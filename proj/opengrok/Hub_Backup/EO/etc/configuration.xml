@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_241" class="java.beans.XMLDecoder">
+ <object class="org.opensolaris.opengrok.configuration.Configuration" id="Configuration0">
+  <void property="allowLeadingWildcard">
+   <boolean>true</boolean>
+  </void>
+  <void property="cmds">
+   <object class="java.util.Collections" method="unmodifiableMap">
+    <object class="java.util.HashMap">
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.PerforceRepository</string>
+      <string>p4</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.ClearCaseRepository</string>
+      <string>cleartool</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.GitRepository</string>
+      <string>/usr/bin/git</string>
+     </void>
+    </object>
+   </object>
+  </void>
+  <void property="ctags">
+   <string>/proj/opengrok/tools/ctags/ctags-5.8/bin/ctags</string>
+  </void>
+  <void property="dataRoot">
+   <string>/proj/opengrok/EO-All-Repos-index/data</string>
+  </void>
+  <void property="projects">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cyclone-tooling</string>
+     </void>
+     <void property="path">
+      <string>/cyclone-tooling</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca</string>
+     </void>
+     <void property="path">
+      <string>/eca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-ansible-vsphere</string>
+     </void>
+     <void property="path">
+      <string>/eca-ansible-vsphere</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-client</string>
+     </void>
+     <void property="path">
+      <string>/eca-client</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-cloudstack</string>
+     </void>
+     <void property="path">
+      <string>/eca-cloudstack</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-core</string>
+     </void>
+     <void property="path">
+      <string>/eca-core</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-core-ref</string>
+     </void>
+     <void property="path">
+      <string>/eca-core-ref</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-docs</string>
+     </void>
+     <void property="path">
+      <string>/eca-docs</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-jclouds</string>
+     </void>
+     <void property="path">
+      <string>/eca-jclouds</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-jinterop</string>
+     </void>
+     <void property="path">
+      <string>/eca-jinterop</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-libs</string>
+     </void>
+     <void property="path">
+      <string>/eca-libs</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-openstack4j</string>
+     </void>
+     <void property="path">
+      <string>/eca-openstack4j</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-os4j</string>
+     </void>
+     <void property="path">
+      <string>/eca-os4j</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-postgresql</string>
+     </void>
+     <void property="path">
+      <string>/eca-postgresql</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-test</string>
+     </void>
+     <void property="path">
+      <string>/eca-test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm</string>
+     </void>
+     <void property="path">
+      <string>/ecm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-base-docker-image</string>
+     </void>
+     <void property="path">
+      <string>/ecm-base-docker-image</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-baseenv-validator</string>
+     </void>
+     <void property="path">
+      <string>/ecm-baseenv-validator</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-ci</string>
+     </void>
+     <void property="path">
+      <string>/ecm-ci</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-client</string>
+     </void>
+     <void property="path">
+      <string>/ecm-client</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-cmdb</string>
+     </void>
+     <void property="path">
+      <string>/ecm-cmdb</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-common</string>
+     </void>
+     <void property="path">
+      <string>/ecm-common</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-config-service</string>
+     </void>
+     <void property="path">
+      <string>/ecm-config-service</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-cw</string>
+     </void>
+     <void property="path">
+      <string>/ecm-cw</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-db</string>
+     </void>
+     <void property="path">
+      <string>/ecm-db</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-dev-tools</string>
+     </void>
+     <void property="path">
+      <string>/ecm-dev-tools</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-docker-jboss</string>
+     </void>
+     <void property="path">
+      <string>/ecm-docker-jboss</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-docker3pp</string>
+     </void>
+     <void property="path">
+      <string>/ecm-docker3pp</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-docs</string>
+     </void>
+     <void property="path">
+      <string>/ecm-docs</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-ecmc</string>
+     </void>
+     <void property="path">
+      <string>/ecm-ecmc</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-expmodgen</string>
+     </void>
+     <void property="path">
+      <string>/ecm-expmodgen</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-fm</string>
+     </void>
+     <void property="path">
+      <string>/ecm-fm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-gui</string>
+     </void>
+     <void property="path">
+      <string>/ecm-gui</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-gui-test</string>
+     </void>
+     <void property="path">
+      <string>/ecm-gui-test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-innovation</string>
+     </void>
+     <void property="path">
+      <string>/ecm-innovation</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-migration-test</string>
+     </void>
+     <void property="path">
+      <string>/ecm-migration-test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-migration-test1</string>
+     </void>
+     <void property="path">
+      <string>/ecm-migration-test1</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-mock-embedded</string>
+     </void>
+     <void property="path">
+      <string>/ecm-mock-embedded</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-notification</string>
+     </void>
+     <void property="path">
+      <string>/ecm-notification</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-ops-engine</string>
+     </void>
+     <void property="path">
+      <string>/ecm-ops-engine</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-performance</string>
+     </void>
+     <void property="path">
+      <string>/ecm-performance</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-pgngn</string>
+     </void>
+     <void property="path">
+      <string>/ecm-pgngn</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-platform</string>
+     </void>
+     <void property="path">
+      <string>/ecm-platform</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-prototype-gui</string>
+     </void>
+     <void property="path">
+      <string>/ecm-prototype-gui</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-rest-client</string>
+     </void>
+     <void property="path">
+      <string>/ecm-rest-client</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-rv-performance</string>
+     </void>
+     <void property="path">
+      <string>/ecm-rv-performance</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-selfcareGui</string>
+     </void>
+     <void property="path">
+      <string>/ecm-selfcareGui</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-service</string>
+     </void>
+     <void property="path">
+      <string>/ecm-service</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-service-test-lsv</string>
+     </void>
+     <void property="path">
+      <string>/ecm-service-test-lsv</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-smoothie</string>
+     </void>
+     <void property="path">
+      <string>/ecm-smoothie</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-test-migration</string>
+     </void>
+     <void property="path">
+      <string>/ecm-test-migration</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-tosca</string>
+     </void>
+     <void property="path">
+      <string>/ecm-tosca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-vim-capacity-sync-service</string>
+     </void>
+     <void property="path">
+      <string>/ecm-vim-capacity-sync-service</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-vim-discovery-service</string>
+     </void>
+     <void property="path">
+      <string>/ecm-vim-discovery-service</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ecm-wf-sdk</string>
+     </void>
+     <void property="path">
+      <string>/ecm-wf-sdk</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ericddc-eo</string>
+     </void>
+     <void property="path">
+      <string>/ericddc-eo</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>rv-ha-robustness-testing</string>
+     </void>
+     <void property="path">
+      <string>/rv-ha-robustness-testing</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>sentilla-client-lib</string>
+     </void>
+     <void property="path">
+      <string>/sentilla-client-lib</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>test</string>
+     </void>
+     <void property="path">
+      <string>/test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>testProject</string>
+     </void>
+     <void property="path">
+      <string>/testProject</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="remoteScmSupported">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.opensolaris.opengrok.configuration.Configuration$RemoteSCM</class>
+    <string>ON</string>
+   </object>
+  </void>
+  <void property="repositories">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/cyclone-tooling</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-ansible-vsphere</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-client</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-cloudstack</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-core-ref</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-core</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-docs</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-jclouds</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-jinterop</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-libs</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-openstack4j</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-os4j</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-postgresql</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca-test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/eca</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-base-docker-image</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-baseenv-validator</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-ci</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-client</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-cmdb</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-common</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-config-service</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-cw</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-db</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-dev-tools</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-docker-jboss</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-docker3pp</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-docs</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-ecmc</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-expmodgen</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-fm</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-gui-test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-gui</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-innovation</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-migration-test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-migration-test1</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-mock-embedded</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-notification</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-ops-engine</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-performance</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-pgngn</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-platform</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-prototype-gui</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-rest-client</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-rv-performance</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-selfcareGui</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-service-test-lsv</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-service</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-smoothie</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-test-migration</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-tosca</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-vim-capacity-sync-service</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-vim-discovery-service</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm-wf-sdk</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ecm</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/ericddc-eo</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/rv-ha-robustness-testing</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/sentilla-client-lib</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/EO-All-Repos/src/testProject</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="sourceRoot">
+   <string>/proj/opengrok/EO-All-Repos/src</string>
+  </void>
+  <void property="urlPrefix">
+   <string>/eo-opengrok/s?</string>
+  </void>
+  <void property="verbose">
+   <boolean>true</boolean>
+  </void>
+ </object>
+</java>

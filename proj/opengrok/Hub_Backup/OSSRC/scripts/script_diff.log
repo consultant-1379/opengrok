@@ -1,0 +1,58 @@
+8,9c8
+< 	#MAIL_USERS="rahul.chhabra@ericsson.com,sonesh.kumar.malhotra@ericsson.com"
+< 	MAIL_USERS="pdlucturee@pdl.internal.ericsson.com"
+---
+> 	MAIL_USERS="judah.06@wipro.com"
+14,18c13,14
+< 	BUILD_MAIL=`pwd`/All_ENM_Repos_Candidate_mail.txt
+<         REPOSITORY_NAME_FILE=/proj/opengrok/ENM-Repos/scripts/all_enm_repos.txt
+< 	#REPOSITORY_NAME_FILE=`pwd`/all_enm_repos.txt
+< 	#REPOSITORY_NAME_POC_FILE=/home/esonmal/Git_Push/utils/scripts/Repository_Name_PoC.txt
+< 	#REPOSITORY_NAME_POC_FILE=/proj/opengrok/ENM-Repos/scripts/all_enm_repos.txt
+---
+> 	BUILD_MAIL=`pwd`/All_OSSRC_Repos_Candidate_mail.txt
+>         REPOSITORY_NAME_FILE=/proj/opengrok/OSSRC-Repos/scripts/all_ossrc_repos.txt
+37c33
+< 		echo $REPO_LIST | egrep "^LITP|^OSS" >> $REPOSITORY_NAME_FILE
+---
+> 		echo $REPO_LIST | egrep "^OSSRC|^OSS" >> $REPOSITORY_NAME_FILE
+55,56c51,52
+< 	LITP_CHECK=`echo $REPOSITORY | awk -F"/" '{print $1}'`
+< 	if [ "$LITP_CHECK" == "LITP" ]
+---
+> 	OSSRC_CHECK=`echo $REPOSITORY | awk -F"/" '{print $1}'`
+> 	if [ "$OSSRC_CHECK" == "OSSRC" ]
+66c62
+< 	if [ ! -d ENM-All-Repos ]
+---
+> 	if [ ! -d OSSRC-All-Repos ]
+68c64
+< 		mkdir -m 775 ENM-All-Repos
+---
+> 		mkdir -m 775 OSSRC-All-Repos
+70c66
+< 	cd ENM-All-Repos
+---
+> 	cd OSSRC-All-Repos
+103c99
+< echo "                                          Script creates/updates ALL ENM GIT Repositories for OpenGrok                 "
+---
+> echo "                                          Script creates/updates ALL OSSRC GIT Repositories for OpenGrok                 "
+119c115
+< echo "creates/updates ALL ENM/LITP GIT Repositories for OpenGrok Jenkins Job has been Executed " >> $BUILD_MAIL
+---
+> echo "creates/updates ALL OSSRC GIT Repositories for OpenGrok Jenkins Job has been Executed " >> $BUILD_MAIL
+134c130
+< OPENGROK_WEBAPP_CONTEXT=/enm-opengrok OPENGROK_VERBOSE=true  OPENGROK_WEBAPP_CFGADDR="localhost:2425" OPENGROK_INSTANCE_BASE=/proj/opengrok/ENM-All-Repos-index /proj/opengrok/tools/opengrok/opengrok-0.12.1.5/bin/OpenGrok  index /proj/opengrok/ENM-All-Repos/src/
+---
+> OPENGROK_WEBAPP_CONTEXT=/ossrc-opengrok OPENGROK_VERBOSE=true  OPENGROK_WEBAPP_CFGADDR="localhost:2440" OPENGROK_INSTANCE_BASE=/proj/opengrok/OSSRC-All-Repos-index /proj/opengrok/tools/opengrok/opengrok-0.12.1.5/bin/OpenGrok  index /proj/opengrok/OSSRC-All-Repos/src/
+139c135
+< echo "ENM DE Infrastructure Team" >> $BUILD_MAIL
+---
+> echo "OSSRC DE Infrastructure Team" >> $BUILD_MAIL
+141c137
+< mailx -r "jenkins_monitoring@ericsson.com" -s "ENM/LITP GIT Repositories for OpenGrok Analysis has been created/updated - ${TODAY_DATE}" $MAIL_USERS <<-EOF
+---
+> mailx -r "jenkins_monitoring@ericsson.com" -s "OSSRC GIT Repositories for OpenGrok Analysis has been created/updated - ${TODAY_DATE}" $MAIL_USERS <<-EOF
+144d139
+< 

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_242" class="java.beans.XMLDecoder">
+ <object class="org.opensolaris.opengrok.configuration.Configuration" id="Configuration0">
+  <void property="allowLeadingWildcard">
+   <boolean>true</boolean>
+  </void>
+  <void property="cmds">
+   <object class="java.util.Collections" method="unmodifiableMap">
+    <object class="java.util.HashMap">
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.GitRepository</string>
+      <string>/usr/bin/git</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.SubversionRepository</string>
+      <string>/usr/bin/svn</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.ClearCaseRepository</string>
+      <string>cleartool</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.PerforceRepository</string>
+      <string>p4</string>
+     </void>
+    </object>
+   </object>
+  </void>
+  <void property="ctags">
+   <string>/proj/opengrok/tools/ctags/ctags-5.8/bin/ctags</string>
+  </void>
+  <void property="dataRoot">
+   <string>/proj/opengrok/SO-All-Repos-index/data</string>
+  </void>
+  <void property="projects">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca</string>
+     </void>
+     <void property="path">
+      <string>/eca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-ansible-vsphere</string>
+     </void>
+     <void property="path">
+      <string>/eca-ansible-vsphere</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-client</string>
+     </void>
+     <void property="path">
+      <string>/eca-client</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-cloudstack</string>
+     </void>
+     <void property="path">
+      <string>/eca-cloudstack</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-core</string>
+     </void>
+     <void property="path">
+      <string>/eca-core</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-core-ref</string>
+     </void>
+     <void property="path">
+      <string>/eca-core-ref</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-docs</string>
+     </void>
+     <void property="path">
+      <string>/eca-docs</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-jclouds</string>
+     </void>
+     <void property="path">
+      <string>/eca-jclouds</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-jinterop</string>
+     </void>
+     <void property="path">
+      <string>/eca-jinterop</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-libs</string>
+     </void>
+     <void property="path">
+      <string>/eca-libs</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-openstack4j</string>
+     </void>
+     <void property="path">
+      <string>/eca-openstack4j</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-os4j</string>
+     </void>
+     <void property="path">
+      <string>/eca-os4j</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-postgresql</string>
+     </void>
+     <void property="path">
+      <string>/eca-postgresql</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eca-test</string>
+     </void>
+     <void property="path">
+      <string>/eca-test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>test</string>
+     </void>
+     <void property="path">
+      <string>/test</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="remoteScmSupported">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.opensolaris.opengrok.configuration.Configuration$RemoteSCM</class>
+    <string>ON</string>
+   </object>
+  </void>
+  <void property="repositories">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-ansible-vsphere</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-client</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-cloudstack</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-core-ref</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-core</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-docs</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-jclouds</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-jinterop</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-libs</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-openstack4j</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-os4j</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-postgresql</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca-test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/SO-All-Repos/src/eca</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="sourceRoot">
+   <string>/proj/opengrok/SO-All-Repos/src</string>
+  </void>
+  <void property="urlPrefix">
+   <string>/so-opengrok/s?</string>
+  </void>
+  <void property="verbose">
+   <boolean>true</boolean>
+  </void>
+ </object>
+</java>

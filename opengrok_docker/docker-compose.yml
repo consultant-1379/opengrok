@@ -1,0 +1,92 @@
+name: opengrok-service
+services:
+  # opengrok-enm:
+  # # http://localhost:8080/source
+  #   platform: linux/arm64
+  #   container_name: opengrok-enm
+  #   env_file: ./config/.env
+  #   environment:
+  #     - SYNC_TIME_STRING=00:00
+  #   # user: 111803:16019
+  #   user: 502:20
+  #   build:
+  #     context: .
+  #     dockerfile: ./enm/Dockerfile
+  #   image: opengrok-enm-image
+  #   ports:
+  #     - "8080:8080/tcp"
+  #   # Volumes store your data between container upgrades init a volume sets the data to be equal to the local folder (Left handside)
+  #   volumes:
+  #      - '${OPENGROK_DOCKER_HOME}/enm/src_enm_docker/:/opengrok-proj/opengrok/src/'  # source code
+  #      - '${OPENGROK_DOCKER_HOME}/enm/etc_cENM_docker/:/opengrok-proj/opengrok/etc/'  # folder contains configuration.xml
+  #      - '${OPENGROK_DOCKER_HOME}/enm/data_cENM_docker/:/opengrok-proj/opengrok/data/'  # index and other things for source code
+  #      - '${SSH_HOME}:${HOME}/.ssh:ro' #Change to SSH Path
+  #      - '${OPENGROK_DOCKER_HOME}/config/group:/etc/group:ro'
+  #      - '${OPENGROK_DOCKER_HOME}/config/passwd:/etc/passwd:ro'
+  # opengrok-cENM:
+  # # http://localhost:8081/source
+  #   platform: linux/arm64
+  #   container_name: opengrok-cENM
+  #   env_file: ./config/.env
+  #   environment:
+  #     - SYNC_TIME_STRING=01:00
+  #   # user: 111803:16019
+  #   user: 502:20
+  #   build:
+  #     context: .
+  #     dockerfile: ./enm/Dockerfile
+  #   image: opengrok-enm-image
+  #   ports:
+  #     - "8081:8080/tcp"
+  #   # Volumes store your data between container upgrades init a volume sets the data to be equal to the local folder (Left handside)
+  #   volumes:
+  #      - '${OPENGROK_DOCKER_HOME}/enm/src_enm_docker/:/opengrok-proj/opengrok/src/'  # source code
+  #      - '${OPENGROK_DOCKER_HOME}/cENM/etc_cENM_docker/:/opengrok-proj/opengrok/etc/'  # folder contains configuration.xml
+  #      - '${OPENGROK_DOCKER_HOME}/cENM/data_cENM_docker/:/opengrok-proj/opengrok/data/'  # index and other things for source code
+  #      - '${SSH_HOME}:${HOME}/.ssh:ro' #Change to SSH Path
+  #      - '${OPENGROK_DOCKER_HOME}/config/group:/etc/group:ro'
+  #      - '${OPENGROK_DOCKER_HOME}/config/passwd:/etc/passwd:ro'
+  opengrok-eic:
+  # http://localhost:8082/source
+    platform: linux/arm64
+    container_name: opengrok-eic
+    env_file: ./config/.env
+    environment:
+      - SYNC_TIME_STRING=02:00
+    # user: 111803:16019
+    user: 502:20
+    build:
+      context: .
+      dockerfile: ./eic/Dockerfile
+    image: opengrok-eic-image
+    ports:
+      - "8082:8080/tcp"
+    volumes:
+       - '${OPENGROK_DOCKER_HOME}/eic/src_eic_docker/:/opengrok-proj/opengrok/src/'  # source code
+       - '${OPENGROK_DOCKER_HOME}/eic/etc_eic_docker/:/opengrok-proj/opengrok/etc/'  # folder contains configuration.xml
+       - '${OPENGROK_DOCKER_HOME}/eic/data_eic_docker/:/opengrok-proj/opengrok/data/'  # index and other things for source code
+       - '${SSH_HOME}:${HOME}/.ssh:ro' #Change to SSH Path
+       - '${OPENGROK_DOCKER_HOME}/config/group:/etc/group:ro'
+       - '${OPENGROK_DOCKER_HOME}/config/passwd:/etc/passwd:ro'
+  opengrok-CI:
+  # http://localhost:8083/source
+    platform: linux/arm64
+    container_name: opengrok-CI
+    env_file: ./config/.env
+    environment:
+      - SYNC_TIME_STRING=03:00
+    # user: 111803:16019
+    user: 502:20
+    build:
+      context: .
+      dockerfile: ./ci/Dockerfile
+    image: opengrok-ci-image
+    ports:
+      - "8083:8080/tcp"
+    volumes:
+       - '${OPENGROK_DOCKER_HOME}/ci/src_ci_docker/:/opengrok-proj/opengrok/src/'  # source code
+       - '${OPENGROK_DOCKER_HOME}/ci/etc_ci_docker/:/opengrok-proj/opengrok/etc/'  # folder contains configuration.xml
+       - '${OPENGROK_DOCKER_HOME}/ci/data_ci_docker/:/opengrok-proj/opengrok/data/'  # index and other things for source code
+       - '${SSH_HOME}:${HOME}/.ssh:ro' #Change to SSH Path
+       - '${OPENGROK_DOCKER_HOME}/config/group:/etc/group:ro'
+       - '${OPENGROK_DOCKER_HOME}/config/passwd:/etc/passwd:ro'

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------------------------------------------------- 
+creates/updates ALL SO GIT Repositories for OpenGrok Jenkins Job has been Executed 
+-------------------------------------------------------------------------------------------------------------------------- 
+ 
+Total Number of Repositories created/updated for OpenGrok : 16
+ 
+ 
+ 
+Thanks and Best Regards,
+SO Infrastructure Team

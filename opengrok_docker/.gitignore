@@ -1,0 +1,7 @@
+*/src*/*
+*/data*/*
+*/etc*/*
+config/.ssh/id_rsa
+config/.ssh/id_rsa.pub
+group
+passwd

@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_241" class="java.beans.XMLDecoder">
+ <object class="org.opensolaris.opengrok.configuration.Configuration" id="Configuration0">
+  <void property="allowLeadingWildcard">
+   <boolean>true</boolean>
+  </void>
+  <void property="cmds">
+   <object class="java.util.Collections" method="unmodifiableMap">
+    <object class="java.util.HashMap">
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.PerforceRepository</string>
+      <string>p4</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.ClearCaseRepository</string>
+      <string>cleartool</string>
+     </void>
+     <void method="put">
+      <string>org.opensolaris.opengrok.history.GitRepository</string>
+      <string>/usr/bin/git</string>
+     </void>
+    </object>
+   </object>
+  </void>
+  <void property="ctags">
+   <string>/proj/opengrok/tools/ctags/ctags-5.8/bin/ctags</string>
+  </void>
+  <void property="dataRoot">
+   <string>/proj/opengrok/OSSRC-All-Repos-index/data</string>
+  </void>
+  <void property="projects">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>3pp_taf</string>
+     </void>
+     <void property="path">
+      <string>/3pp_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ARNE_test</string>
+     </void>
+     <void property="path">
+      <string>/ARNE_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>FM_test</string>
+     </void>
+     <void property="path">
+      <string>/FM_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>MOM_tool</string>
+     </void>
+     <void property="path">
+      <string>/MOM_tool</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>auto_install</string>
+     </void>
+     <void property="path">
+      <string>/auto_install</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>axm_test</string>
+     </void>
+     <void property="path">
+      <string>/axm_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>bcgpilot</string>
+     </void>
+     <void property="path">
+      <string>/bcgpilot</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>bcgtaf</string>
+     </void>
+     <void property="path">
+      <string>/bcgtaf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>bsim-taf-assembly</string>
+     </void>
+     <void property="path">
+      <string>/bsim-taf-assembly</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>bsim-taf-project-new-plm</string>
+     </void>
+     <void property="path">
+      <string>/bsim-taf-project-new-plm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>bsim-taf-project-plm</string>
+     </void>
+     <void property="path">
+      <string>/bsim-taf-project-plm</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cdb_ossrc_install</string>
+     </void>
+     <void property="path">
+      <string>/cdb_ossrc_install</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cdbupg_taf</string>
+     </void>
+     <void property="path">
+      <string>/cdbupg_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cex-taf</string>
+     </void>
+     <void property="path">
+      <string>/cex-taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cms-taf</string>
+     </void>
+     <void property="path">
+      <string>/cms-taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cominf-testware</string>
+     </void>
+     <void property="path">
+      <string>/cominf-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>cominf_test</string>
+     </void>
+     <void property="path">
+      <string>/cominf_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>dc-testware</string>
+     </void>
+     <void property="path">
+      <string>/dc-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eba_taf_test</string>
+     </void>
+     <void property="path">
+      <string>/eba_taf_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>eniqm_taf</string>
+     </void>
+     <void property="path">
+      <string>/eniqm_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>fm-performance-testware</string>
+     </void>
+     <void property="path">
+      <string>/fm-performance-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>gma-testware</string>
+     </void>
+     <void property="path">
+      <string>/gma-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>grancm_test</string>
+     </void>
+     <void property="path">
+      <string>/grancm_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>hck-testware</string>
+     </void>
+     <void property="path">
+      <string>/hck-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>momvalidator</string>
+     </void>
+     <void property="path">
+      <string>/momvalidator</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>mpep-testware</string>
+     </void>
+     <void property="path">
+      <string>/mpep-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>mscnead-testware</string>
+     </void>
+     <void property="path">
+      <string>/mscnead-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>nma_taf</string>
+     </void>
+     <void property="path">
+      <string>/nma_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>nni_test</string>
+     </void>
+     <void property="path">
+      <string>/nni_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>nsd_project_taf</string>
+     </void>
+     <void property="path">
+      <string>/nsd_project_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>nss_test</string>
+     </void>
+     <void property="path">
+      <string>/nss_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>orchestrator_taf</string>
+     </void>
+     <void property="path">
+      <string>/orchestrator_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>ossrc_cdb_setup</string>
+     </void>
+     <void property="path">
+      <string>/ossrc_cdb_setup</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>pci_taf</string>
+     </void>
+     <void property="path">
+      <string>/pci_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>pcpb-testware</string>
+     </void>
+     <void property="path">
+      <string>/pcpb-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>plugins-testware</string>
+     </void>
+     <void property="path">
+      <string>/plugins-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>pms_taf</string>
+     </void>
+     <void property="path">
+      <string>/pms_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>pssnad-testware</string>
+     </void>
+     <void property="path">
+      <string>/pssnad-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>rps-taf</string>
+     </void>
+     <void property="path">
+      <string>/rps-taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>rrpm_taf</string>
+     </void>
+     <void property="path">
+      <string>/rrpm_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>security-test</string>
+     </void>
+     <void property="path">
+      <string>/security-test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>selfdiagnose-testware</string>
+     </void>
+     <void property="path">
+      <string>/selfdiagnose-testware</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>smo_taf_test</string>
+     </void>
+     <void property="path">
+      <string>/smo_taf_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>system-test-cdb-server-checks</string>
+     </void>
+     <void property="path">
+      <string>/system-test-cdb-server-checks</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>taf_scheduler</string>
+     </void>
+     <void property="path">
+      <string>/taf_scheduler</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>usck_test</string>
+     </void>
+     <void property="path">
+      <string>/usck_test</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>wfeng_taf</string>
+     </void>
+     <void property="path">
+      <string>/wfeng_taf</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.configuration.Project">
+     <void property="description">
+      <string>wranmom-taf-project</string>
+     </void>
+     <void property="path">
+      <string>/wranmom-taf-project</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="remoteScmSupported">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.opensolaris.opengrok.configuration.Configuration$RemoteSCM</class>
+    <string>ON</string>
+   </object>
+  </void>
+  <void property="repositories">
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/3pp_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/ARNE_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/FM_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/MOM_tool</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/auto_install</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/axm_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/bcgpilot</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/bcgtaf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/bsim-taf-assembly</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/bsim-taf-project-new-plm</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/bsim-taf-project-plm</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cdb_ossrc_install</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cdbupg_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cex-taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cms-taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cominf-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/cominf_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/dc-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/eba_taf_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/eniqm_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/fm-performance-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/gma-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/grancm_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/hck-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/momvalidator</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/mpep-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/mscnead-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/nma_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/nni_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/nsd_project_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/nss_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/orchestrator_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/ossrc_cdb_setup</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/pci_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/pcpb-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/plugins-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/pms_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/pssnad-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/rps-taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/rrpm_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/security-test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/selfdiagnose-testware</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/smo_taf_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/system-test-cdb-server-checks</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/taf_scheduler</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/usck_test</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/wfeng_taf</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="org.opensolaris.opengrok.history.RepositoryInfo">
+     <void property="datePattern">
+      <string>EEE MMM dd hh:mm:ss yyyy ZZZZ</string>
+     </void>
+     <void property="directoryName">
+      <string>/proj/opengrok/OSSRC-All-Repos/src/wranmom-taf-project</string>
+     </void>
+     <void property="type">
+      <string>git</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="sourceRoot">
+   <string>/proj/opengrok/OSSRC-All-Repos/src</string>
+  </void>
+  <void property="urlPrefix">
+   <string>/ossrc-opengrok/s?</string>
+  </void>
+  <void property="verbose">
+   <boolean>true</boolean>
+  </void>
+ </object>
+</java>

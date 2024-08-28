@@ -1,0 +1,34 @@
+<!--web.xml update for IDM Start-->
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>API endpoints are checked separately by the web app</web-resource-name>
+        <url-pattern>/api/*</url-pattern>
+    </web-resource-collection>
+</security-constraint>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>In general everything needs to be authenticated</web-resource-name>
+        <url-pattern>/*</url-pattern> <!-- protect the whole application -->
+        <url-pattern>/api/v1/search</url-pattern> <!-- protect search endpoint whitelisted above -->
+        <url-pattern>/api/v1/suggest/*</url-pattern> <!-- protect suggest endpoint whitelisted above -->
+    </web-resource-collection>
+
+    <auth-constraint>
+        <role-name>idm-3fe7b6dgf441</role-name>
+    </auth-constraint>
+
+    <user-data-constraint>
+        <!-- transport-guarantee can be CONFIDENTIAL, INTEGRAL, or NONE -->
+        <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+</security-constraint>
+
+<security-role>
+    <role-name>idm-3fe7b6dgf441</role-name>
+</security-role>
+
+<login-config>
+    <auth-method>BASIC</auth-method>
+</login-config>
+<!--web.xml update for IDM End-->

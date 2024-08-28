@@ -1,0 +1,2 @@
+OSS/com.ericsson.sonom/sonom
+OSS/com.ericsson.son.sonom.test/testware

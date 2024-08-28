@@ -1,0 +1,3 @@
+05 03 * * * /proj/opengrok/ENM-Repos/scripts/litp_create_update_opengrok_gitrepos_with_indexing.sh
+05 06 * * * /proj/opengrok/ENM-Repos/scripts/create_update_opengrok_all_enm_repos_with_indexing.sh
+05 12 * * 6 /proj/opengrok/ENM-Repos/scripts/restart_tomcat.sh

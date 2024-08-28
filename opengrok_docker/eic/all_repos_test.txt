@@ -1,0 +1,5 @@
+OSS/com.ericsson.oss.dmi/eric-oss-4g-pm-event-parser
+OSS/com.ericsson.oss.dmi/eric-oss-mobility-mgmt-ebm-parser
+OSS/com.ericsson.oss.dmi/eric-oss-mobility-mgmt-ebm-termination
+OSS/com.ericsson.oss.dmi/eric-oss-session-mgmt-ebm-parser
+OSS/com.ericsson.oss.dmi/eric-oss-session-mgmt-ebm-termination
